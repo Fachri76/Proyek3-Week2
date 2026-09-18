@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>Interactive Profile Card</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Interactive Profile Card</h1>
+
+    <p id="status"
+       data-state="idle"
+       role="status"
+       aria-live="polite">
+      Menyiapkan profil...
+    </p>
+
+    <button id="coba-lagi"
+            type="button"
+            hidden>
+      Coba Lagi
+    </button>
+
+    <section id="profil"
+             class="profile-card"
+             hidden>
+
+      <h2 id="nama-profil"></h2>
+
+      <p id="prodi-profil"></p>
+
+      <button id="toggle-detail"
+              type="button"
+              aria-expanded="false">
+        Lihat Detail
+      </button>
+
+      <div id="detail"
+           class="detail">
+
+        <p id="bio-profil"></p>
+
+      </div>
+
+      <button id="toggle-tema"
+              type="button">
+        Ganti Tema
+      </button>
+
+      <h3>Keterampilan</h3>
+
+      <ul id="daftar-skill"></ul>
+
+      <form id="form-skill">
+
+        <label for="skill">
+          Tambah keterampilan
+        </label>
+
+        <input id="skill"
+               name="skill"
+               type="text">
+
+        <p id="error-skill"
+           class="error"></p>
+
+        <button type="submit">
+          Tambah
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>

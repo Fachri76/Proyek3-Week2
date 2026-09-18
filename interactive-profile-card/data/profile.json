@@ -1,0 +1,10 @@
+{
+  "nama": "Fachri",
+  "programStudi": "D3 Teknik Informatika",
+  "bio": "Mahasiswa yang sedang mempelajari pengembangan web menggunakan HTML, CSS, dan JavaScript.",
+  "keterampilan": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ]
+}

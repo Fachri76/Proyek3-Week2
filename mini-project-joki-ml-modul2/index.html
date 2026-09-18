@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joki Mobile Legends</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#beranda">Joki ML</a>
+
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu">
+        Menu
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Navigasi utama">
+        <a href="#layanan">Layanan</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <button
+        id="tema-toggle"
+        class="tema-toggle"
+        type="button"
+        aria-pressed="false">
+        Tema Gelap
+      </button>
+    </div>
+  </header>
+
+  <main id="beranda">
+    <section class="intro container">
+      <h1>Jasa Joki Mobile Legends</h1>
+      <p>
+        Contoh landing page sederhana untuk melihat layanan,
+        cara order, dan kontak admin.
+      </p>
+    </section>
+
+    <section id="layanan" class="section container">
+      <h2>Layanan</h2>
+
+      <label for="filter-layanan">Filter layanan</label>
+      <select id="filter-layanan">
+        <option value="semua">Semua</option>
+        <option value="rank">Joki Rank</option>
+        <option value="placement">Placement</option>
+      </select>
+
+      <p id="status-layanan" role="status" aria-live="polite"></p>
+
+      <div id="daftar-layanan" class="box-list"></div>
+    </section>
+
+    <section id="cara-order" class="section section-alt">
+      <div class="container">
+        <h2>Cara Order</h2>
+
+        <div class="box">
+          <ol>
+            <li>Pilih layanan.</li>
+            <li>Hubungi admin.</li>
+            <li>Kirim rank sekarang dan target rank.</li>
+            <li>Tunggu konfirmasi.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section container">
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <button
+          class="faq-question"
+          type="button"
+          aria-expanded="false"
+          aria-controls="jawaban-1">
+          Berapa lama proses joki?
+        </button>
+        <div id="jawaban-1" class="faq-answer" hidden>
+          <p>Waktu pengerjaan bergantung pada rank dan target yang dipilih.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button
+          class="faq-question"
+          type="button"
+          aria-expanded="false"
+          aria-controls="jawaban-2">
+          Bagaimana cara memilih layanan?
+        </button>
+        <div id="jawaban-2" class="faq-answer" hidden>
+          <p>Pilih layanan pada bagian Layanan lalu hubungi admin.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button
+          class="faq-question"
+          type="button"
+          aria-expanded="false"
+          aria-controls="jawaban-3">
+          Apakah bisa memilih target rank?
+        </button>
+        <div id="jawaban-3" class="faq-answer" hidden>
+          <p>Ya. Target rank dapat disampaikan ketika menghubungi admin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section section-alt">
+      <div class="container">
+        <h2>Kontak</h2>
+
+        <form id="form-kontak" novalidate>
+          <label for="nama">Nama</label>
+          <input
+            id="nama"
+            name="nama"
+            type="text"
+            aria-describedby="error-nama">
+
+          <small id="error-nama" class="error"></small>
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            aria-describedby="error-email">
+
+          <small id="error-email" class="error"></small>
+
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="4"
+            aria-describedby="error-pesan"></textarea>
+
+          <small id="error-pesan" class="error"></small>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <p id="status-form" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <button id="kembali-atas" class="kembali-atas" type="button">
+    Kembali ke Atas
+  </button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>2026 - Mini Project Joki Mobile Legends</p>
+      <p class="catatan">Contoh project pembelajaran, bukan layanan nyata.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+.container {
+  width: min(90%, 700px);
+  margin-inline: auto;
+  padding-block: 40px;
+}
+
+.profile-card {
+  padding: 24px;
+  border-radius: 12px;
+  background: white;
+}
+
+button,
+input {
+  padding: 10px;
+  margin-block: 6px;
+}
+
+input {
+  width: 100%;
+}
+
+.detail {
+  display: none;
+  padding: 12px;
+  margin-block: 10px;
+  background: #f3f4f6;
+}
+
+.detail.terbuka {
+  display: block;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-block: 8px;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+body.dark-theme {
+  color: #f9fafb;
+  background: #111827;
+}
+
+body.dark-theme .profile-card {
+  background: #1f2937;
+}
+
+body.dark-theme .detail {
+  background: #374151;
+}
+
+#status[data-state="loading"] {
+  color: #1d4ed8;
+}
+
+#status[data-state="error"] {
+  color: #b91c1c;
+}
+
+#status[data-state="success"] {
+  color: #166534;
+}
